@@ -1,0 +1,42 @@
+# Grammar and Fitness
+GRAMMAR_FILE: eeg_glm.bnf
+FITNESS_FUNCTION: glm_fitness
+
+# Population Parameters
+POPULATION_SIZE: 500
+GENERATIONS: 100
+ELITE_SIZE: 10
+
+# Genetic Operators
+CROSSOVER_PROBABILITY: 0.8
+MUTATION_PROBABILITY: 0.02
+MUTATION_EVENTS: 1
+
+# Selection
+SELECTION: tournament
+TOURNAMENT_SIZE: 3
+
+# Replacement
+REPLACEMENT: generational
+
+# Initialization
+INIT_GENOME_LENGTH: 50
+MAX_INIT_TREE_DEPTH: 10
+MIN_INIT_TREE_DEPTH: 5
+
+# Constraints
+MAX_TREE_DEPTH: 17
+MAX_GENOME_LENGTH: 500
+CODON_SIZE: 100000
+
+# Output
+VERBOSE: True
+SAVE_ALL: True
+SAVE_PLOTS: True
+
+# Random seed (comment out for random)
+# RANDOM_SEED: 42
+
+# Multicore (if available)
+# MULTICORE: True
+# CORES: 4
